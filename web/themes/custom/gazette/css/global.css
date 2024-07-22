@@ -1,7 +1,7 @@
 #gazetteMenu{
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    /* align-items: end; */
     /* background-color: pink; */
     gap: 5rem;
 }

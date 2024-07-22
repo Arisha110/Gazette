@@ -258,86 +258,11 @@
 </header>
 
 
-{# <section
-	class="welcome-blog-post-slide owl-carousel">
-	<!-- Single Blog Post -->
-	<div
-		class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(img/bg-img/1.jpg);">
-		<!-- Single Blog Post Content -->
-		<div class="single-blog-post-content">
-			<div class="tags">
-				<a href="#">crypto</a>
-			</div>
-			<h3>
-				<a href="#" class="font-pt">Crypto world goes mad</a>
-			</h3>
-			<div class="date">
-				<a href="#">March 29, 2018</a>
-			</div>
-		</div>
-	</div>
-	<!-- Single Blog Post -->
-	<div
-		class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(img/bg-img/2.jpg);">
-		<!-- Single Blog Post Content -->
-		<div class="single-blog-post-content">
-			<div class="tags">
-				<a href="#">live</a>
-			</div>
-			<h3>
-				<a href="#" class="font-pt">The latest news live</a>
-			</h3>
-			<div class="date">
-				<a href="#">March 29, 2018</a>
-			</div>
-		</div>
-	</div>
-	<!-- Single Blog Post -->
-	<div
-		class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(img/bg-img/3.jpg);">
-		<!-- Single Blog Post Content -->
-		<div class="single-blog-post-content">
-			<div class="tags">
-				<a href="#">politics</a>
-			</div>
-			<h3>
-				<a href="#" class="font-pt">Financial advices
-				</a>
-			</h3>
-			<div class="date">
-				<a href="#">March 29, 2018</a>
-			</div>
-		</div>
-	</div>
-	<!-- Single Blog Post -->
-	<div
-		class="single-blog-post-slide bg-img background-overlay-5" style="background-image: url(img/bg-img/2.jpg);">
-		<!-- Single Blog Post Content -->
-		<div class="single-blog-post-content">
-			<div class="tags">
-				<a href="#">live</a>
-			</div>
-			<h3>
-				<a href="#" class="font-pt">The latest news live</a>
-			</h3>
-			<div class="date">
-				<a href="#">March 29, 2018</a>
-			</div>
-		</div>
-	</div>
-</section> #}
 
-{# Check if the page contains a node (content) #}
-{% if node is not empty %}
-  {# Render each article/content separately #}
-  {% for item in node.field_article_content %}
-    <article>
-      <h2>{{ item.title.value }}</h2>
-      <div>{{ item.body.value|raw }}</div>
-      {# Render other fields as needed, e.g., images, tags, etc. #}
-    </article>
-  {% endfor %}
-{% endif %}
+
+
+
+
 
 
 
@@ -348,9 +273,10 @@
                 <div class="col-12 col-lg-9">
                     <!-- Gazette Welcome Post -->
                     <div class="gazette-welcome-post">
+                        {{ page.main_content }}
                         <!-- Post Tag -->
                         <div class="gazette-post-tag">
-                            <a href="#">{{page.field_tags}}</a>
+                            <a href="#">Politics</a>
                         </div>
                         <h2 class="font-pt">What's behind the world obsession with gems?</h2>
                         <p class="gazette-post-date">March 29, 2016</p>
@@ -421,7 +347,8 @@
                                 <h5>breaking news</h5>
                             </div>
                             <!-- Single Breaking News Widget -->
-                            <div class="single-breaking-news-widget">
+                            {{ page.sidebar}}
+                            {# <div class="single-breaking-news-widget">
                                 <img src="img/blog-img/bn-1.jpg" alt="">
                                 <div class="breakingnews-title">
                                     <p>breaking news</p>
@@ -439,7 +366,7 @@
                                 <div class="breaking-news-heading gradient-background-overlay">
                                     <h5 class="font-pt">Can a zebra crossing change its stripes?</h5>
                                 </div>
-                            </div>
+                            </div> #}
                         </div>
 
                         <!-- Don't Miss Widget -->
