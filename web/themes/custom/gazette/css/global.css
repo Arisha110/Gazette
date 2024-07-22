@@ -1,7 +1,9 @@
 #gazetteMenu{
     display: flex;
     justify-content: space-between;
-    background-color: pink;
+    align-items: end;
+    /* background-color: pink; */
+    gap: 5rem;
 }
 .navbar-collapse{
     display: flex;
@@ -12,5 +14,8 @@
 
 .search-block-form{
     display: flex;
-    align-items: end;
+    
+   justify-content: end;
+   align-items: end;
+   margin-left: 8rem;
 }

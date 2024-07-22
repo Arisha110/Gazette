@@ -327,6 +327,19 @@
 	</div>
 </section> #}
 
+{# Check if the page contains a node (content) #}
+{% if node is not empty %}
+  {# Render each article/content separately #}
+  {% for item in node.field_article_content %}
+    <article>
+      <h2>{{ item.title.value }}</h2>
+      <div>{{ item.body.value|raw }}</div>
+      {# Render other fields as needed, e.g., images, tags, etc. #}
+    </article>
+  {% endfor %}
+{% endif %}
+
+
 
 
 <section class="main-content-wrapper section_padding_100">
