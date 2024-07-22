@@ -1263,6 +1263,13 @@ textarea.form-control {
     font-weight: 400;
 }
 
+.footer-color{
+    color: white;
+    background-color: grey;
+    /* background-image: url("{{ base_path ~ '/themes/custom/gazette/img/core-img/logo.png' }}"); */
+    background-image: url("/themes/custom/gazette/img/core-img/logo.png");
+}
+
 .single-footer-widget .footer-widget-menu li > a {
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
