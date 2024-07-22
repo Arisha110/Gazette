@@ -1,0 +1,13 @@
+myform.simpleform:
+  title: Form1
+  description: Task2 Form
+  route_name: rsvplist.formdemo
+  weight: 10
+  parent: system.admin
+
+myform.form2:
+  title: Form2
+  description: Task1 Form
+  route_name: rsvplist.formdemo2
+  weight: 10
+  parent: system.admin

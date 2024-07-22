@@ -1,0 +1,9 @@
+access get nodes rest resource:
+  title: 'Access GET nodes REST resource'
+  description: 'Permission to access the GET nodes REST resource.'
+  restrict access: true
+
+access post nodes rest resource:
+  title: 'Access POST nodes REST resource'
+  description: 'Permission to access the POST nodes REST resource.'
+  restrict access: true

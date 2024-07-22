@@ -1,0 +1,11 @@
+
+<?php
+
+
+// function icecream_preprocess_node(&$variables){
+//    $variables['current_user_is_owner'] = FALSE;
+
+//   if ($variables['logged_in'] == TRUE && $variables['node']->getOwnerId() == $variables['user']->id()) {
+//     $variables['label']['#suffix'] = '- [You are the author]';
+//   }
+// }

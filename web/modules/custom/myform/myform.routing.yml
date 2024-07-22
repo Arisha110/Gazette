@@ -1,0 +1,41 @@
+rsvplist.formdemo2:
+  path: '/simple-form/hello'
+  defaults:
+    _form: '\Drupal\myform\Form\SimpleForm'
+    _title: 'My simple form'
+  requirements:
+    _permission: 'access content'
+   
+rsvplist.formdemo:
+  path: '/simple-form'
+  defaults:
+    _controller: '\Drupal\myform\Controller\FormController::createForm'
+    _title: 'My simple form (Using Controller) '
+  requirements:
+    _permission: 'access content'
+  
+myform.get_nodes:
+  path: '/api/get-nodes'
+  defaults:
+    _controller: '\Drupal\myform\Controller\GetNodesController::getNodes'
+    _title: 'Get Nodes'
+  methods: ['GET']
+  requirements:
+    _permission: 'access content'
+    # _role: 'administrator'
+  options:
+    _auth: [basic_auth] 
+  
+
+ 
+myform.post_node:
+  path: '/api/post-node'
+  defaults:
+    _controller: '\Drupal\myform\Controller\PostNodeController::createNode'
+    _title: 'Create Node'
+  requirements:
+    _permission: 'access content'
+    # _role: 'administrator'
+  methods: ['POST'] 
+  options:
+    _auth: ['basic_auth']

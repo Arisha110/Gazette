@@ -1,0 +1,26 @@
+gazette:
+  css:
+    theme:
+      css/bootstrap.min.css: {}
+      css/animate.css: {}
+      css/core-style.css: {}
+      css/owl.carousel.css: {}
+      css/font-awesome.min.css: {}
+      css/jquery-ui.min.css: {}
+      css/magnific-popup.css: {}
+      css/responsive.css: {}
+      css/pe-icon-7-stroke.css: {}
+      css/nouislider.css: {}
+
+  js:
+    js/bootstrap.min.js: {}
+    js/active.js: {}
+    js/map-active.js: {}
+    js/plugins.js: {}
+    js/popper.min.js: {}
+    js/jquery/jquery-2.2.4.min.js: {}
+
+global:
+  css:
+    theme:
+      css/global.css: {}

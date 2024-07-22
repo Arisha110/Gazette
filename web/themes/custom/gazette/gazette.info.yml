@@ -1,0 +1,17 @@
+name: 'The Gazette'
+type: theme
+description: 'A great theme for news website'
+core_version_requirement: ^9 || ^10
+base theme: claro
+
+regions:
+  header_top: 'Header Top'
+  header_middle: 'Header Middle'
+  header_bottom: 'Header Bottom'
+  slider: 'Slider'
+  footer: 'Footer'
+
+libraries:
+  - gazette/gazette
+  - gazette/global
+  

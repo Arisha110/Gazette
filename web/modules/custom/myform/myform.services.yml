@@ -1,0 +1,12 @@
+services:
+  myform.validation_service:
+    class: 'Drupal\myform\Service\ValidationService'
+    arguments: []
+
+  myform.get_nodes_controller:
+    class: 'Drupal\myform\Controller\GetNodesController'
+    arguments: ['@entity_type.manager']
+
+  myform.post_node_controller:
+    class: 'Drupal\myform\Controller\PostNodeController'
+    arguments: ['@entity_type.manager', '@current_user', '@myform.validation_service']

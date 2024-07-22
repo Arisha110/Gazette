@@ -1,0 +1,10 @@
+name: Simple Form 
+type: module
+description: 'A simple form for users'
+core_version_requirement: ^9
+package: Form Task
+
+dependencies:
+  - drupal:block
+
+configure: rsvplist.admin_settings
