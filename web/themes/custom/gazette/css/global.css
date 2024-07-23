@@ -19,3 +19,15 @@
    align-items: end;
    /* margin-left: 6rem; */
 }
+.field__label{
+    display: none;
+}
+.most-popular{
+    display: flex;
+}
+.node__content{
+    display: flex;
+}
+.mainy{
+    display: flex;
+}

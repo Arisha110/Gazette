@@ -80,6 +80,12 @@
 {{ attach_library('claro/classy.node') }}
 <article{{ attributes.addClass(classes) }}>
 
+<div class="gazette-post-tag">
+      {{ content.field_tags }}
+      
+  </div>
+
+
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }}>
@@ -88,19 +94,13 @@
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+  <p class="gazette-post-date"> {{ content.field_date }} </p>
+ {{ content.field_image }}
+
+ {{ content.body }}
 
   <div{{ content_attributes.addClass('node__content') }}>
- 
-    {{ content }}
+  
   </div>
 
 </article>

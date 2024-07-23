@@ -10,6 +10,8 @@ regions:
   header_bottom: 'Header Bottom'
   slider: 'Slider'
   main_content: 'Main Content'
+  most_popular: 'Most Popular'
+  dont_miss: 'Dont Miss'
   sidebar: 'Sidebar'
   footer: 'Footer'
 

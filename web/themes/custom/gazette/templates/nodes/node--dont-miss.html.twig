@@ -80,27 +80,21 @@
 {{ attach_library('claro/classy.node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
+ 
 
   <div{{ content_attributes.addClass('node__content') }}>
  
-    {{ content }}
+ <div class="single-dont-miss-post d-flex mb-30">
+                                <div class="dont-miss-post-thumb">
+                                    {{ content.field_image }}
+                                </div>
+                                <div class="dont-miss-post-content">
+                                    <a class="font-pt">{{ content.field_title }}</a>
+                                    <span>{{ content.field_date  }}</span>
+                                </div>
+                            </div>
+
   </div>
 
 </article>
