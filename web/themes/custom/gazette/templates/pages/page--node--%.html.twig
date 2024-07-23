@@ -39,17 +39,82 @@
  * @see html.html.twig
  */
 #}
-  <header class="content-header clearfix">
-    <div class="layout-container">
-      {{ page.breadcrumb }}
-      {{ page.header }}
-      Hello World
-    </div>
-  </header>
+
+   
+<header class="header-area">
+
+        <!-- Middle Header Area -->
+        <div class="middle-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <!-- Logo Area -->
+                    <div class="col-12 col-md-4">
+                        <div class="logo-area">
+                            <a href="index.html">
+							<img src="{{ base_path ~ '/themes/custom/gazette/img/core-img/logo.png' }}" class="d-block w-100" alt="slider">
+                            
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Header Advert Area -->
+                    <div class="col-12 col-md-8">
+                        <div class="header-advert-area">
+                            <a href="#">
+							<img src="{{ base_path ~ '/themes/custom/gazette/img/bg-img/top-advert.png' }}" class="d-block w-100" alt="slider">
+                            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Header Area -->
+        <div class="bottom-header">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="main-menu">
+                            <nav class="navbar navbar-expand-lg">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gazetteMenu" aria-controls="gazetteMenu" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i> Menu</button>
+                                <div class="collapse navbar-collapse" id="gazetteMenu">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                         {{ page.header_bottom }}
+                                            {# <a class="nav-link" href="#">{{ page.bottom_header }}</a> #}
+                                        </li>
+                                        {# <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="index.html">Home</a>
+                                                <a class="dropdown-item" href="catagory.html">Catagory</a>
+                                                <a class="dropdown-item" href="single-post.html">Single Post</a>
+                                                <a class="dropdown-item" href="about-us.html">About Us</a>
+                                                <a class="dropdown-item" href="contact.html">Contact</a>
+                                            </div>
+                                        </li> #}
+                                        
+                                    </ul>
+                                    <!-- Search Form -->
+                                   
+                                    <!-- Search btn -->
+                                    
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
   <div class="layout-container">
-    {{ page.pre_content }}
-    <main class="page-content clearfix" role="main">
+
+  <div>
+
+  {{ page.content  }}
+  </div>
+    
+    {# <main class="page-content clearfix" role="main">
       <div class="visually-hidden"><a id="main-content" tabindex="-1"></a></div>
       {{ page.highlighted }}
       {% if page.help %}
@@ -58,6 +123,6 @@
         </div>
       {% endif %}
       {{ page.content }}
-    </main>
+    </main> #}
 
   </div>
