@@ -19,6 +19,8 @@ gazette:
     js/plugins.js: {}
     js/popper.min.js: {}
     js/jquery/jquery-2.2.4.min.js: {}
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js': {type: external}
+    'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js': {type: external}
 
 global:
   css:

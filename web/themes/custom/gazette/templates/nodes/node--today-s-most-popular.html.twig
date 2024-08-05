@@ -78,29 +78,31 @@
   ]
 %}
 {{ attach_library('claro/classy.node') }}
-<article{{ attributes.addClass(classes) }}>
-
-<div class="gazette-post-tag">
-      {{ content.field_tags }}
-      
-  </div>
+<article{{attributes.addClass(classes)}}>
 
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
 
-  <p class="gazette-post-date"> {{ content.field_date }} </p>
- {{ content.field_image }}
+	<div{{content_attributes.addClass('node__content')}}>
+		
 
- {{ content.body }}
+		<div class="todays-post-thumb most-popular single-dont-miss-post d-flex mb-30">
+			{{ content.field_img}}
+		</div>
+		<div
+			class="todays-post-content">
+			<!-- Post Tag -->
+			<div class="gazette-post-tag">
+				{{content.field_tagss}}
+			</div>
+			<h3>
+				<a href="#" class="font-pt mb-2">{{ label}}</a>
+			</h3>
+			<span class="gazette-post-date mb-2">{{content.field_date}}</span>
+			{# <p> {{ content.field_comments.count }}</p> #}
+			<p>{{content.field_body}}</p>
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {# {{ dump(content|keys)}} #}
-  </div>
+		
+		</div>
+	</div>
 
 </article>

@@ -78,29 +78,43 @@
   ]
 %}
 {{ attach_library('claro/classy.node') }}
-<article{{ attributes.addClass(classes) }}>
-
-<div class="gazette-post-tag">
-      {{ content.field_tags }}
-      
-  </div>
+<article{{attributes.addClass(classes)}}>
 
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+	<div{{content_attributes.addClass('node__content')}}>
 
-  <p class="gazette-post-date"> {{ content.field_date }} </p>
- {{ content.field_image }}
+		<div class="single-breaking-news-widget">
+			{{ content.field_image}}
+			<div class="breakingnews-title">
+				<p>breaking news</p>
+			</div>
+			<div
+				class="breaking-news-heading gradient-background-overlay">
 
- {{ content.body }}
+				{# {{ title_prefix }} #}
+				{% if label and not page %}
+					<h5 class="font-pt" {{title_attributes}}>
+						<a href="{{ url }}" rel="bookmark">{{ label }}</a>
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {# {{ dump(content|keys)}} #}
-  </div>
+					{% endif %}
+					{# {{ title_suffix }} #}
+				</h5>
+
+			
+
+			</div>
+		</div>
+		
+	</div>
+
+  	{# {% if not is_front and node is defined  %}
+					
+						<div class="node-description">
+							{{ content.field_desc }}
+              {{ dump(content|keys)}}
+              Hellooo
+						</div>
+					
+				{% endif %} #}
 
 </article>

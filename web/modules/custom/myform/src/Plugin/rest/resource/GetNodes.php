@@ -19,32 +19,34 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  *   label = @Translation("Nodes List"),
  *   uri_paths = {
  *     "canonical" = "/get/nodes",
- *     "create" = "/get/nodes"
+ *     "create" = "/post/nodes"
  *   }
  * )
  */
-class GetNodes extends ResourceBase {
+class GetNodes extends ResourceBase
+{
 
   /**
    * Responds to entity GET requests.
    *
    * @return \Drupal\rest\ResourceResponse
    */
-  public function get() {
-    
-    
+  public function get()
+  {
+
     $nids = \Drupal::entityQuery('node')
       ->condition('type', 'simple_form')
       ->execute();
 
-   
+
     $nodes = Node::loadMultiple($nids);
 
     $processed_nodes = $this->processNodes($nodes);
 
     return new ResourceResponse($processed_nodes);
   }
-  public function permissions() {
+  public function permissions()
+  {
     return [];
   }
 
@@ -58,7 +60,8 @@ class GetNodes extends ResourceBase {
    * @return array
    *   An array of processed node data.
    */
-  private function processNodes(array $nodes) {
+  private function processNodes(array $nodes)
+  {
     $answer = [];
 
     foreach ($nodes as $node) {
@@ -75,27 +78,25 @@ class GetNodes extends ResourceBase {
     return $answer;
   }
 
-  public function post($data){
-    try{
-      //  dump($data); exit;
- 
 
- 
+  //post api
+  
+  public function post($data)
+  {
+    try {
 
-// Create node object with attached file.
-$node = Node::create([
-  'type'        => $data['type'],
-  'title'       => $data['title'],
- 'field_name'  => $data['name'],
- 'status' => 1,
-]);
-$node->save();
+      // Create node object with attached file.
+      $node = Node::create([
+        'type'        => $data['type'],
+        'title'       => $data['title'],
+        'field_name'  => $data['name'],
+        'status' => 1,
+      ]);
+      $node->save();
 
-return new ResourceResponse("Node created successfully");
+      return new ResourceResponse("Node created successfully");
+    } catch (EntityStorageException $e) {
+      \Drupal::logger('custom-rest')->error($e->getMessage());
     }
-    catch(EntityStorageException $e){
-       \Drupal::logger('custom-rest')->error($e->getMessage());
-    }
-
   }
 }

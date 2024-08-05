@@ -23,8 +23,8 @@ myform.get_nodes:
   requirements:
     _permission: 'access content'
     # _role: 'administrator'
-  options:
-    _auth: [basic_auth] 
+  # options:
+  #   _auth: [basic_auth] 
   
 
  

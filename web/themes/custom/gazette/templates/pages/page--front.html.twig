@@ -40,128 +40,13 @@
  */
 #}
 
-<header class="header-area">
-	{# <div class="top-header">
-		            <div class="container h-100">
-		                <div class="row h-100 align-items-center"> #}
-	<!-- Breaking News Area -->
-	{# <div class="col-12 col-md-6">
-		                        <div class="breaking-news-area">
-		                            <h5 class="breaking-news-title">Breaking news</h5>
-		                            <div id="breakingNewsTicker" class="ticker">
-		                                <ul>
-		                                    <li><a href="#">Brexit breakthrough in Brussels comes after week of drama</a></li>
-		                                    <li><a href="#">Brexit breakthrough in Brussels</a></li>
-		                                    <li><a href="#">Brexit breakthrough in Brussels comes after week of drama</a></li>
-		                                    <li><a href="#">Brex comes after week of drama</a></li>
-		                                    <li><a href="#">Brexit breakthrough in Bweek of drama</a></li>
-		                                    <li><a href="#">Brexit bssels comes after week of drama</a></li>
-		                                </ul>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <!-- Stock News Area -->
-		                    <div class="col-12 col-md-6">
-		                        <div class="stock-news-area">
-		                            <div id="stockNewsTicker" class="ticker">
-		                                <ul>
-		                                    <li>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>eur/usd</span>
-		                                                <span>1.1862</span>
-		                                            </div>
-		                                            <div class="stock-index minus-index">
-		                                                <h4>0.18</h4>
-		                                            </div>
-		                                        </div>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>BTC/usd</span>
-		                                                <span>15.674.99</span>
-		                                            </div>
-		                                            <div class="stock-index plus-index">
-		                                                <h4>8.60</h4>
-		                                            </div>
-		                                        </div>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>ETH/usd</span>
-		                                                <span>674.99</span>
-		                                            </div>
-		                                            <div class="stock-index minus-index">
-		                                                <h4>13.60</h4>
-		                                            </div>
-		                                        </div>
-		                                    </li>
-		                                    <li>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>eur/usd</span>
-		                                                <span>1.1862</span>
-		                                            </div>
-		                                            <div class="stock-index minus-index">
-		                                                <h4>0.18</h4>
-		                                            </div>
-		                                        </div>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>BTC/usd</span>
-		                                                <span>15.674.99</span>
-		                                            </div>
-		                                            <div class="stock-index plus-index">
-		                                                <h4>8.60</h4>
-		                                            </div>
-		                                        </div>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>ETH/usd</span>
-		                                                <span>674.99</span>
-		                                            </div>
-		                                            <div class="stock-index minus-index">
-		                                                <h4>13.60</h4>
-		                                            </div>
-		                                        </div>
-		                                    </li>
-		                                    <li>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>eur/usd</span>
-		                                                <span>1.1862</span>
-		                                            </div>
-		                                            <div class="stock-index minus-index">
-		                                                <h4>3.95</h4>
-		                                            </div>
-		                                        </div>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>BTC/usd</span>
-		                                                <span>15.674.99</span>
-		                                            </div>
-		                                            <div class="stock-index plus-index">
-		                                                <h4>4.78</h4>
-		                                            </div>
-		                                        </div>
-		                                        <div class="single-stock-report">
-		                                            <div class="stock-values">
-		                                                <span>ETH/usd</span>
-		                                                <span>674.99</span>
-		                                            </div>
-		                                            <div class="stock-index minus-index">
-		                                                <h4>11.37</h4>
-		                                            </div>
-		                                        </div>
-		                                    </li>
-		                                </ul>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div> #}
+<header
+	class="header-area">
+
 
 	<!-- Middle Header Area -->
-		<div class="middle-header"> <div class="container h-100">
+	<div class="middle-header">
+		<div class="container h-100">
 			<div
 				class="row h-100 align-items-center">
 				<!-- Logo Area -->
@@ -178,7 +63,7 @@
 					<div class="header-advert-area">
 						<a
 							href="#">
-							{# <img src="img/bg-img/top-advert.png" alt="header-add"> #}
+							
 							<img src="{{ base_path ~ '/themes/custom/gazette/img/bg-img/top-advert.png' }}" class="d-block w-100" alt="slider">
 						</a>
 					</div>
@@ -193,17 +78,17 @@
 				<div class="col-12">
 					<div class="main-menu">
 						<nav class="navbar navbar-expand-lg">
-							
+
 							<div class="collapse navbar-collapse mainy" id="gazetteMenu">
 								<ul class="navbar-nav mainy mr-auto">
-								 <li class="nav-item">
-                                            {{ page.header_bottom }}
-                                        </li>
-									
-								
+									<li class="nav-item">
+										{{ page.header_bottom }}
+									</li>
+
+
 								</ul>
-								
-								
+
+
 							</div>
 						</nav>
 					</div>
@@ -214,6 +99,76 @@
 </header>
 
 
+<!-- Welcome Blog Slide Area Start -->
+{# <div id="carouselExampleCaptions" class="carousel slide">
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img src="{{ base_path ~ '/themes/custom/gazette/img/bg-img/1.jpg' }}" class="d-block w-100" alt="slider">
+
+			<div class="carousel-caption d-none d-md-block">
+				<h5>First slide label</h5>
+				<p>Some representative placeholder content for the first slide.</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="{{ base_path ~ '/themes/custom/gazette/img/bg-img/2.jpg' }}" class="d-block w-100" alt="slider">
+
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Second slide label</h5>
+				<p>Some representative placeholder content for the second slide.</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="{{ base_path ~ '/themes/custom/gazette/img/bg-img/3.jpg' }}" class="d-block w-100" alt="slider">
+
+			<div class="carousel-caption d-none d-md-block">
+				<h5>Third slide label</h5>
+				<p>Some representative placeholder content for the third slide.</p>
+			</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div> #}
+
+
+
+
+{# latest news sliding area #}
+
+{# <div class="latest-news-marquee-area">
+        <div class="simple-marquee-container">
+            <div class="marquee">
+                <ul class="marquee-content-items">
+                    <li>
+                        <a href="#"><span class="latest-news-time">10:40</span> The Facebook Live stream that could presage TV</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="latest-news-time">11:02</span> Opinion: It's time to start talking about impeachment</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="latest-news-time">12:37</span> Clinton aims to shore up Wisconsin with new TV ads</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="latest-news-time">13:59</span> Trump signs tax bill before leaving for Mar-a-Lago</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> #}
+
+
 <section class="main-content-wrapper section_padding_100">
 	<div class="container">
 		<div class="row">
@@ -221,8 +176,8 @@
 				class="col-12 col-lg-9">
 				<!-- Gazette Welcome Post -->
 				<div class="gazette-welcome-post">
-					{{ page.main_content }}
-					
+					{{ page.content }}
+
 				</div>
 
 				<div class="gazette-todays-post section_padding_100_50">
@@ -231,48 +186,48 @@
 					</div>
 					<!-- Single Today Post -->
 					<div class="gazette-single-todays-post d-md-flex align-items-start mb-50">
-					   {{ page.most_popular }}
+						{{ page.most_popular }}
 						{# <div class="todays-post-thumb">
-							<img src="img/blog-img/2.jpg" alt="">
-						</div>
-						<div
-							class="todays-post-content">
-							<!-- Post Tag -->
-							<div class="gazette-post-tag">
-								<a href="#">News</a>
-							</div>
-							<h3>
-								<a href="#" class="font-pt mb-2">$250-million mansion is most expensive</a>
-							</h3>
-							<span class="gazette-post-date mb-2">March 29, 2016</span>
-							<a href="#" class="post-total-comments">3 Comments</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.</p>
-						</div> #}
+																									<img src="img/blog-img/2.jpg" alt="">
+																								</div>
+																								<div
+																									class="todays-post-content">
+																									<!-- Post Tag -->
+																									<div class="gazette-post-tag">
+																										<a href="#">News</a>
+																									</div>
+																									<h3>
+																										<a href="#" class="font-pt mb-2">$250-million mansion is most expensive</a>
+																									</h3>
+																									<span class="gazette-post-date mb-2">March 29, 2016</span>
+																									<a href="#" class="post-total-comments">3 Comments</a>
+																									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ultrices egestas nunc, quis venenatis orci tincidunt id. Fusce commodo blandit eleifend. Nullam viverra tincidunt dolor, at pulvinar dui. Nullam at risus ut ipsum viverra posuere.</p>
+																								</div> #}
 					</div>
 					<!-- Single Today Post -->
 					{# <div class="gazette-single-todays-post d-md-flex align-items-start mb-50">
-						<div class="todays-post-thumb">
-							<img src="img/blog-img/3.jpg" alt="">
-						</div>
-						<div
-							class="todays-post-content">
-							<!-- Post Tag -->
-							<div class="gazette-post-tag">
-								<a href="#">Life</a>
-							</div>
-							<h3>
-								<a href="#" class="font-pt mb-2">Homeless man steals $350,000
-								</a>
-							</h3>
-							<p class="gazette-post-date mb-2">March 29, 2016</p>
-							<a href="#" class="post-total-comments">3 Comments</a>
-							<p>Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.</p>
-						</div>
-					</div>  #}
+																					<div class="todays-post-thumb">
+																						<img src="img/blog-img/3.jpg" alt="">
+																					</div>
+																					<div
+																						class="todays-post-content">
+																						<!-- Post Tag -->
+																						<div class="gazette-post-tag">
+																							<a href="#">Life</a>
+																						</div>
+																						<h3>
+																							<a href="#" class="font-pt mb-2">Homeless man steals $350,000
+																							</a>
+																						</h3>
+																						<p class="gazette-post-date mb-2">March 29, 2016</p>
+																						<a href="#" class="post-total-comments">3 Comments</a>
+																						<p>Aliquam quis convallis enim. Nunc pulvinar molestie sem id blandit. Nunc venenatis interdum mollis. Aliquam finibus nulla quam, a iaculis justo finibus non. Suspendisse in fermentum nunc.</p>
+																					</div>
+																				</div>  #}
 				</div>
 			</div>
 
-           {# breaking news #}
+			{# breaking news #}
 			<div class="col-12 col-lg-3 col-md-6">
 				<div
 					class="sidebar-area">
@@ -284,24 +239,24 @@
 						<!-- Single Breaking News Widget -->
 						{{ page.sidebar}}
 						{# <div class="single-breaking-news-widget">
-						                                <img src="img/blog-img/bn-1.jpg" alt="">
-						                                <div class="breakingnews-title">
-						                                    <p>breaking news</p>
-						                                </div>
-						                                <div class="breaking-news-heading gradient-background-overlay">
-						                                    <h5 class="font-pt">China leads new global skyscraper record</h5>
-						                                </div>
-						                            </div>
-						                            <!-- Single Breaking News Widget -->
-						                            <div class="single-breaking-news-widget">
-						                                <img src="img/blog-img/bn-2.jpg" alt="">
-						                                <div class="breakingnews-title">
-						                                    <p>breaking news</p>
-						                                </div>
-						                                <div class="breaking-news-heading gradient-background-overlay">
-						                                    <h5 class="font-pt">Can a zebra crossing change its stripes?</h5>
-						                                </div>
-						                            </div> #}
+																								                                <img src="img/blog-img/bn-1.jpg" alt="">
+																								                                <div class="breakingnews-title">
+																								                                    <p>breaking news</p>
+																								                                </div>
+																								                                <div class="breaking-news-heading gradient-background-overlay">
+																								                                    <h5 class="font-pt">China leads new global skyscraper record</h5>
+																								                                </div>
+																								                            </div>
+																								                            <!-- Single Breaking News Widget -->
+																								                            <div class="single-breaking-news-widget">
+																								                                <img src="img/blog-img/bn-2.jpg" alt="">
+																								                                <div class="breakingnews-title">
+																								                                    <p>breaking news</p>
+																								                                </div>
+																								                                <div class="breaking-news-heading gradient-background-overlay">
+																								                                    <h5 class="font-pt">Can a zebra crossing change its stripes?</h5>
+																								                                </div>
+																								                            </div> #}
 					</div>
 
 					<!-- Don't Miss Widget -->
@@ -313,10 +268,10 @@
 						<div class="single-dont-miss-post d-flex mb-30">
 							{{ page.dont_miss }}
 						</div>
-						
+
 					</div>
-				
-					
+
+
 					<!-- Subscribe Widget -->
 					<div class="subscribe-widget">
 						<div class="widget-title">
@@ -336,119 +291,193 @@
 </section>
 
 
+<footer
+	class="footer-area bg-img background-overlay" style="background-image: url(img/bg-img/4.jpg);">
+	<!-- Top Footer Area -->
+	<div class="top-footer-area section_padding_100_70">
+		<div class="container">
+			<div
+				class="row">
+				<!-- Single Footer Widget -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="single-footer-widget">
+						<div class="footer-widget-title">
+							<h4 class="font-pt">Regions</h4>
+						</div>
+						<ul class="footer-widget-menu">
+							<li>
+								<a href="#">U.S.</a>
+							</li>
+							<li>
+								<a href="#">Africa</a>
+							</li>
+							<li>
+								<a href="#">Americas</a>
+							</li>
+							<li>
+								<a href="#">Asia</a>
+							</li>
+							<li>
+								<a href="#">China</a>
+							</li>
+							<li>
+								<a href="#">Europe</a>
+							</li>
+							<li>
+								<a href="#">Middle</a>
+							</li>
+							<li>
+								<a href="#">East</a>
+							</li>
+							<li>
+								<a href="#">Opinion</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Single Footer Widget -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="single-footer-widget">
+						<div class="footer-widget-title">
+							<h4 class="font-pt">Fashion</h4>
+						</div>
+						<ul class="footer-widget-menu">
+							<li>
+								<a href="#">Election 2016</a>
+							</li>
+							<li>
+								<a href="#">Nation</a>
+							</li>
+							<li>
+								<a href="#">World</a>
+							</li>
+							<li>
+								<a href="#">Our Team</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Single Footer Widget -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="single-footer-widget">
+						<div class="footer-widget-title">
+							<h4 class="font-pt">Politics</h4>
+						</div>
+						<ul class="footer-widget-menu">
+							<li>
+								<a href="#">Business</a>
+							</li>
+							<li>
+								<a href="#">Markets</a>
+							</li>
+							<li>
+								<a href="#">Tech</a>
+							</li>
+							<li>
+								<a href="#">Luxury</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Single Footer Widget -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="single-footer-widget">
+						<div class="footer-widget-title">
+							<h4 class="font-pt">Featured</h4>
+						</div>
+						<ul class="footer-widget-menu">
+							<li>
+								<a href="#">Football</a>
+							</li>
+							<li>
+								<a href="#">Golf</a>
+							</li>
+							<li>
+								<a href="#">Tennis</a>
+							</li>
+							<li>
+								<a href="#">Motorsport</a>
+							</li>
+							<li>
+								<a href="#">Horseracing</a>
+							</li>
+							<li>
+								<a href="#">Equestrian</a>
+							</li>
+							<li>
+								<a href="#">Sailing</a>
+							</li>
+							<li>
+								<a href="#">Skiing</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Single Footer Widget -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="single-footer-widget">
+						<div class="footer-widget-title">
+							<h4 class="font-pt">FAQ</h4>
+						</div>
+						<ul class="footer-widget-menu">
+							<li>
+								<a href="#">Aviation</a>
+							</li>
+							<li>
+								<a href="#">Business</a>
+							</li>
+							<li>
+								<a href="#">Traveller</a>
+							</li>
+							<li>
+								<a href="#">Destinations</a>
+							</li>
+							<li>
+								<a href="#">Features</a>
+							</li>
+							<li>
+								<a href="#">Food/Drink</a>
+							</li>
+							<li>
+								<a href="#">Hotels</a>
+							</li>
+							<li>
+								<a href="#">Partner Hotels</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Single Footer Widget -->
+				<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+					<div class="single-footer-widget">
+						<div class="footer-widget-title">
+							<h4 class="font-pt">+More</h4>
+						</div>
+						<ul class="footer-widget-menu">
+							<li>
+								<a href="#">Fashion</a>
+							</li>
+							<li>
+								<a href="#">Design</a>
+							</li>
+							<li>
+								<a href="#">Architecture</a>
+							</li>
+							<li>
+								<a href="#">Arts</a>
+							</li>
+							<li>
+								<a href="#">Autos</a>
+							</li>
+							<li>
+								<a href="#">Luxury</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-
-<footer class="footer-area bg-img background-overlay" style="background-image: url(img/bg-img/4.jpg);">
-        <!-- Top Footer Area -->
-        <div class="top-footer-area section_padding_100_70">
-            <div class="container">
-                <div class="row">
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="single-footer-widget">
-                            <div class="footer-widget-title">
-                                <h4 class="font-pt">Regions</h4>
-                            </div>
-                            <ul class="footer-widget-menu">
-                                <li><a href="#">U.S.</a></li>
-                                <li><a href="#">Africa</a></li>
-                                <li><a href="#">Americas</a></li>
-                                <li><a href="#">Asia</a></li>
-                                <li><a href="#">China</a></li>
-                                <li><a href="#">Europe</a></li>
-                                <li><a href="#">Middle</a></li>
-                                <li><a href="#">East</a></li>
-                                <li><a href="#">Opinion</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="single-footer-widget">
-                            <div class="footer-widget-title">
-                                <h4 class="font-pt">Fashion</h4>
-                            </div>
-                            <ul class="footer-widget-menu">
-                                <li><a href="#">Election 2016</a></li>
-                                <li><a href="#">Nation</a></li>
-                                <li><a href="#">World</a></li>
-                                <li><a href="#">Our Team</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="single-footer-widget">
-                            <div class="footer-widget-title">
-                                <h4 class="font-pt">Politics</h4>
-                            </div>
-                            <ul class="footer-widget-menu">
-                                <li><a href="#">Business</a></li>
-                                <li><a href="#">Markets</a></li>
-                                <li><a href="#">Tech</a></li>
-                                <li><a href="#">Luxury</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="single-footer-widget">
-                            <div class="footer-widget-title">
-                                <h4 class="font-pt">Featured</h4>
-                            </div>
-                            <ul class="footer-widget-menu">
-                                <li><a href="#">Football</a></li>
-                                <li><a href="#">Golf</a></li>
-                                <li><a href="#">Tennis</a></li>
-                                <li><a href="#">Motorsport</a></li>
-                                <li><a href="#">Horseracing</a></li>
-                                <li><a href="#">Equestrian</a></li>
-                                <li><a href="#">Sailing</a></li>
-                                <li><a href="#">Skiing</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="single-footer-widget">
-                            <div class="footer-widget-title">
-                                <h4 class="font-pt">FAQ</h4>
-                            </div>
-                            <ul class="footer-widget-menu">
-                                <li><a href="#">Aviation</a></li>
-                                <li><a href="#">Business</a></li>
-                                <li><a href="#">Traveller</a></li>
-                                <li><a href="#">Destinations</a></li>
-                                <li><a href="#">Features</a></li>
-                                <li><a href="#">Food/Drink</a></li>
-                                <li><a href="#">Hotels</a></li>
-                                <li><a href="#">Partner Hotels</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Single Footer Widget -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="single-footer-widget">
-                            <div class="footer-widget-title">
-                                <h4 class="font-pt">+More</h4>
-                            </div>
-                            <ul class="footer-widget-menu">
-                                <li><a href="#">Fashion</a></li>
-                                <li><a href="#">Design</a></li>
-                                <li><a href="#">Architecture</a></li>
-                                <li><a href="#">Arts</a></li>
-                                <li><a href="#">Autos</a></li>
-                                <li><a href="#">Luxury</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-      
-    </footer>
-
-
-	
+</footer>
